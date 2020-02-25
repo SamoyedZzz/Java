@@ -52,3 +52,10 @@ public class Manager extends Employee{
     }
 }
 ```
+- 多态
+对象变量是多态的，例如Employee既可以引用Employee类对象，也可以引用Employee子类对象，如下所示
+```java
+Employee[] staff = new Employee[3];
+Manager boss = new Manager("fangming", 100.0);
+staff[0] = boss;
+```
